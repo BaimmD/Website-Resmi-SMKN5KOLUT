@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SMKN 5 Kolaka Utara</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="logo">
+      <img src="logo.png" alt="Logo Sekolah">
+      <h1>SMKN 5 Kolaka Utara</h1>
+    </div>
+    <ul class="menu">
+      <li><a href="#">Beranda</a></li>
+      <li><a href="#">Media</a></li>
+      <li><a href="#">Profil</a></li>
+      <li><a href="#">Kontak</a></li>
+      <li><a href="#">Ekstrakurikuler</a></li>
+    </ul>
+    <div class="search-box">
+      <input type="text" placeholder="Cari...">
+      <button><i class="fa fa-search"></i></button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <h1>Selamat Datang di SMKN 5 Kolaka Utara</h1>
+    <p class="motto">"Disiplin, Cerdas, Kreatif, dan Berprestasi"</p>
+  </section>
+
+  <!-- HERO STATS -->
+  <section class="hero-stats">
+    <div class="hero-cards">
+      <div class="hero-card">
+        <i class="fa fa-users"></i>
+        <h2>100</h2>
+        <p>Siswa Aktif</p>
+      </div>
+      <div class="hero-card">
+        <i class="fa fa-chalkboard-teacher"></i>
+        <h2>16</h2>
+        <p>Guru</p>
+      </div>
+      <div class="hero-card">
+        <i class="fa fa-briefcase"></i>
+        <h2>9</h2>
+        <p>Staff</p>
+      </div>
+      <div class="hero-card">
+        <i class="fa fa-star"></i>
+        <h2>6</h2>
+        <p>Ekstrakurikuler</p>
+      </div>
+    </div>
+  </section>
+
+<!-- ================= PROFIL SEKOLAH ================= -->
+<section class="profil-sekolah">
+  <h2>Profil Sekolah</h2>
+  <div class="underline"></div>
+
+  <!-- Tombol Pilihan -->
+  <div class="profil-btns">
+    <button onclick="showContent('visi-misi')" class="active">Visi & Misi</button>
+    <button onclick="showContent('sejarah')">Sejarah</button>
+  </div>
+
+  <!-- Konten Visi & Misi -->
+  <div id="visi-misi" class="content-section active">
+    <div class="content-img"></div>
+    <div class="content-text">
+      <h3>Visi & Misi</h3>
+      <p><strong>Visi:</strong> Menjadi sekolah unggul, berprestasi, dan berkarakter.</p>
+      <p><strong>Misi:</strong> Mencetak generasi terampil di bidang teknologi dan kejuruan yang siap bersaing di dunia kerja.</p>
+    </div>
+  </div>
+
+  <!-- Konten Sejarah -->
+  <div id="sejarah" class="content-section">
+    <div class="content-img"></div>
+    <div class="content-text">
+      <h3>Sejarah</h3>
+      <p>SMKN 5 Kolaka Utara berdiri sebagai pusat pendidikan kejuruan yang bertujuan mencetak lulusan profesional, berakhlak mulia, dan siap menghadapi tantangan dunia industri maupun wirausaha.</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- PENGUMUMAN -->
+<section class="pengumuman">
+  <h2>Pengumuman Terbaru</h2>
+  <div class="underline"></div>
+
+  <div class="cards">
+    <!-- Baris pertama -->
+    <div class="card">
+      <h3>Ujian Semester Ganjil</h3>
+      <p>Senin, 10 November 2025</p>
+      <p>Pelaksanaan ujian semester ganjil bagi seluruh siswa kelas X, XI, dan XII.</p>
+    </div>
+    <div class="card">
+      <h3>Kegiatan Lomba OSIS</h3>
+      <p>Rabu, 12 November 2025</p>
+      <p>Perlombaan antar kelas untuk memperingati Hari Pahlawan Nasional.</p>
+    </div>
+    <div class="card">
+      <h3>Workshop Teknologi</h3>
+      <p>Jumat, 15 November 2025</p>
+      <p>Kegiatan workshop teknologi terbaru untuk jurusan TJKT.</p>
+    </div>
+
+    <!-- Baris kedua (hidden by default) -->
+    <div class="card extra-card">
+      <h3>Penerimaan Siswa Baru</h3>
+      <p>Senin, 05 Januari 2026</p>
+      <p>Penerimaan peserta didik baru di SMKN 5 Kolaka Utara untuk tahun ajaran 2026/2027.</p>
+    </div>
+    <div class="card extra-card">
+      <h3>Launching BLUD</h3>
+      <p>Selasa, 20 Januari 2026</p>
+      <p>SMKN 5 Kolaka Utara resmi meluncurkan program BLUD untuk mendukung pengembangan sekolah.</p>
+    </div>
+    <div class="card extra-card">
+      <h3>Pelatihan Guru</h3>
+      <p>Kamis, 22 Januari 2026</p>
+      <p>Pelatihan peningkatan kompetensi guru dalam bidang teknologi pembelajaran digital.</p>
+    </div>
+  </div>
+
+  <div class="center-btn">
+    <button class="btn-lainnya" onclick="toggleExtra()">Lihat Pengumuman Lainnya</button>
+  </div>
+</section>
+
+  <!-- Section Jurusan -->
+<section class="jurusan">
+  <div class="jurusan-wrapper">
+    <!-- Polygon background -->
+    <div class="jurusan-shape">
+<h2 class="jurusan-title">
+  <span>JURUSAN</span>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 150" class="jurusan-bg">
+    <path d="M20,75 Q60,20 200,20 Q340,20 380,75 Q340,130 200,130 Q60,130 20,75 Z"
+          fill="#c9d9f0" stroke="black" stroke-dasharray="6"/>
+  </svg>
+</h2>
+>
+      <div class="underline"></div>
+      <p>Jurusan di SMK sangat beragam dan dibagi berdasarkan bidang keahlian, seperti</p>
+    </div>
+
+    <!-- Icon kiri -->
+    <img src="/img/Group 43.svg" alt="pencil" class="icon-left">
+    <!-- Icon kanan -->
+    <img src="/img/Open Book.svg" alt="book" class="icon-right">
+  </div>
+</section>
+
+    <div class="jurusan-cards">
+      <!-- Card 1 -->
+      <div class="jurusan-card">
+        <div class="jurusan-text">
+          <h3>Teknik Komputer Jaringan</h3>
+          <p>Dalam program keahlian di Sekolah Menengah Kejuruan (SMK) yang mendidik siswa untuk menguasai perakitan, instalasi, konfigurasi, pengoperasian, dan pemeliharaan perangkat keras komputer serta jaringan komputer.</p>
+          <a href="#" class="btn-details">Details</a>
+        </div>
+        <div class="jurusan-img">
+          <img src="jaringan.jpg" alt="Teknik Komputer Jaringan">
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="jurusan-card reverse">
+        <div class="jurusan-text">
+          <h3>Teknik Bisnis Sepeda Motor</h3>
+          <p>Adalah program keahlian di SMK yang mendidik siswa untuk menguasai perakitan, instalasi, konfigurasi, pengoperasian, dan pemeliharaan sepeda motor.</p>
+          <a href="#" class="btn-details">Details</a>
+        </div>
+        <div class="jurusan-img">
+          <img src="tbsm.jpg" alt="Teknik Bisnis Sepeda Motor">
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="jurusan-card">
+        <div class="jurusan-text">
+          <h3>Agribisnis Tanaman Pangan dan Hortikultura</h3>
+          <p>Program keahlian di SMK yang mendidik siswa untuk menguasai pertanian, pengolahan, dan pemeliharaan tanaman pangan serta hortikultura.</p>
+          <a href="#" class="btn-details">Details</a>
+        </div>
+        <div class="jurusan-img">
+          <img src="agri.jpg" alt="Agribisnis Tanaman">
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="jurusan-card reverse">
+        <div class="jurusan-text">
+          <h3>Tata Busana</h3>
+          <p>Dalam program keahlian ini siswa dididik untuk menguasai keterampilan menjahit, desain pakaian, hingga produksi busana modern.</p>
+          <a href="#" class="btn-details">Details</a>
+        </div>
+        <div class="jurusan-img">
+          <img src="tata-busana.jpg" alt="Tata Busana">
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="jurusan-card">
+        <div class="jurusan-text">
+          <h3>Geologi Pertambangan</h3>
+          <p>Program keahlian ini mendidik siswa untuk menguasai teknik eksplorasi, pemetaan, serta analisis pertambangan modern.</p>
+          <a href="#" class="btn-details">Details</a>
+        </div>
+        <div class="jurusan-img">
+          <img src="geologi.jpg" alt="Geologi Pertambangan">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-logo">
+        <img src="logo.png" alt="Logo Sekolah">
+      </div>
+      <div class="footer-info">
+        <h3>SMKN 5 Kolaka Utara</h3>
+        <p>Jl. Pendidikan No. 123, Kolaka Utara</p>
+        <p>Telp: (0405) 123456</p>
+      </div>
+      <div class="footer-links">
+        <h3>Link Terkait</h3>
+        <ul>
+          <li><a href="#">Beranda</a></li>
+          <li><a href="#">Profil</a></li>
+          <li><a href="#">Kontak</a></li>
+        </ul>
+      </div>
+      <div class="footer-social">
+        <h3>Ikuti Kami</h3>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 SMKN 5 Kolaka Utara. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- SCRIPT -->
+  <script>
+    // Show Profil Sekolah Content
+    function showContent(id) {
+      document.querySelectorAll('.content-section').forEach(sec => {
+        sec.classList.remove('active');
+      });
+      document.getElementById(id).classList.add('active');
+    }
+
+    // Toggle Pengumuman Cards
+    function toggleExtra() {
+      const extras = document.querySelectorAll('.extra-card');
+      const btn = document.querySelector('.btn-lainnya');
+      const isHidden = !extras[0].classList.contains('show');
+
+      extras.forEach(card => {
+        if (isHidden) {
+          card.classList.add('show');
+        } else {
+          card.classList.remove('show');
+        }
+      });
+
+      btn.textContent = isHidden ? "Sembunyikan Pengumuman" : "Lihat Pengumuman Lainnya";
+    }
+  </script>
+</body>
+</html>
